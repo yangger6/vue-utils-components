@@ -1,0 +1,33 @@
+{
+  "name": "vue-utils-components",
+  "version": "0.0.1",
+  "description": "vue-utils-components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "webpack --context example --config ./example/webpack.config.js --mode development",
+    "example:serve": "webpack-dev-server --hot --progress --context example --config ./example/webpack.config.js --mode development"
+  },
+  "author": "yangger(i@yangger.cn)",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.1",
+    "vue-loader": "^15.7.0",
+    "vue-property-decorator": "^8.1.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2"
+  }
+}

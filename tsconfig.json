@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "outDir": "./built/",
+    "strict": true,
+    "importHelpers": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "lib": [
+    "dom",
+    "es5",
+    "es6",
+    "es7",
+    "es2015.promise"
+  ],
+  "typeRoots": [
+    "./node_modules/vue/types",
+    "./src/types/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

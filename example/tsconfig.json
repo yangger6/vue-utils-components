@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "declaration": true,
+    "declarationDir": "types",
+    "strict": true,
+    "target": "es5",
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es2015.collection"
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
