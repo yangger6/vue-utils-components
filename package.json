@@ -1,14 +1,23 @@
 {
   "name": "vue-utils-components",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "vue-utils-components",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "webpack --mode production",
     "project": "webpack --context project --config ./project/webpack.config.js --mode development",
     "project:serve": "webpack-dev-server --hot --progress --context project --config ./project/webpack.config.js --mode development"
   },
+  "typings": "lib/types/index.d.ts",
+  "files": [
+    "src",
+    "lib/*.js",
+    "lib/types/*.d.ts"
+  ],
+  "keywords": [
+    "vue-utils-components"
+  ],
   "author": "yangger(i@yangger.cn)",
   "license": "MIT",
   "devDependencies": {
