@@ -22,8 +22,7 @@ module.exports = {
                     compilerOptions: {
                         declaration: true,
                         declarationDir: "./lib/types",
-                    },
-                    appendTsSuffixTo: [/\.vue$/]
+                    }
                 }
             }
         ],

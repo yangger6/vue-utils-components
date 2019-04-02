@@ -1,12 +1,12 @@
 # vue-utils-components
 
-utils components based on Vuejs.[![Build Status](https://img.shields.io/badge/README-切换语言-yellow.svg)](README_zh.md)
+基于vueJs的工具组件
 
-## Components
+## 组件
 
-[*] v-oss-img (based on aliyun oss and auto format to webp and progress jpeg)  
+[*] v-oss-img (基于阿里云oss自动转换成webp和渐进式jpeg格式)  
 
-## Install
+## 安装
 
 ```bash
 yarn add vue-utils-components
@@ -16,7 +16,7 @@ yarn add vue-utils-components
 npm install vue-utils-components -S
 ```
 
-## Quick Start
+## 快速开始
 
 ```javascript
 import Vue from 'vue'
@@ -34,7 +34,7 @@ Vue.component(VOssImg.name, VOssImg)
 
 ```
 
-## Test and Build
+## 测试和编译
 
 ```bash
 

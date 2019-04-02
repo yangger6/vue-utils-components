@@ -5,11 +5,12 @@
     "outDir": "./built/",
     "strict": true,
     "importHelpers": true,
+    "experimentalDecorators": true,
     "noImplicitReturns": true,
     "moduleResolution": "node",
+    "strictPropertyInitialization": false,
     "noImplicitThis": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "./src/**/*"

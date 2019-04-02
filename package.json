@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "example": "webpack --context example --config ./example/webpack.config.js --mode development",
-    "example:serve": "webpack-dev-server --hot --progress --context example --config ./example/webpack.config.js --mode development"
+    "prepare": "webpack --mode production",
+    "project": "webpack --context project --config ./project/webpack.config.js --mode development",
+    "project:serve": "webpack-dev-server --hot --progress --context project --config ./project/webpack.config.js --mode development"
   },
   "author": "yangger(i@yangger.cn)",
   "license": "MIT",
@@ -24,6 +25,7 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
+    "tslint": "^5.15.0",
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {

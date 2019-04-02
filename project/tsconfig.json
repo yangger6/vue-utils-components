@@ -13,7 +13,9 @@
     "lib": [
       "dom",
       "es5",
-      "es2015.collection"
+      "es6",
+      "es7",
+      "es2015.promise"
     ]
   },
   "include": [
