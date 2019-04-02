@@ -16,7 +16,7 @@ module.exports = {
         rules: [
             { test: /\.vue$/, use: 'vue-loader' },
             { test: /\.scss/, use: ["style-loader", "css-loader", "less-loader",] },
-            { test: /\.ts$/, loader: 'ts-loader', options: { appendTsSuffixTo: [/\.vue$/] } }
+            { test: /\.ts$/, loader: 'ts-loader', options: { appendTsSuffixTo: [/\.vue$/], transpileOnly: true } }
         ],
     },
     plugins: [
