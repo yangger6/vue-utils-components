@@ -8,11 +8,10 @@
         @Prop({
             type: String,
             default: ''
-        }) src: string
+        }) src: string = ''
         @Prop(String) alt!: string
-        isOss: boolean
-        isWebp: boolean
-        $supportWebp: boolean = Vue.prototype.$supportWebp
+        isOss: boolean = false
+        isWebp: boolean = false
         created() {
             if (this.src) {
                 this.isOss = /aliyun/.test(this.src)
