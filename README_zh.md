@@ -30,7 +30,7 @@ import {
   // ...
 } from 'vue-utils-components'
 
-Vue.component(VOssImg.name, VOssImg)
+Vue.use(VOssImg)
 
 ```
 
