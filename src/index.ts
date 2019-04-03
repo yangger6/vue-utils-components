@@ -13,17 +13,17 @@ const components: {
     VOssImg
 }
 
-function install(vue: typeof Vue, options = {}) {
+export const install = (vue: typeof Vue, options = {}) => {
     Object.keys(components).forEach((key: string) => {
-        Vue.use(components[key])
+        vue.use(components[key])
     })
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
     install(window.Vue)
 }
-
 export {
+    version,
     VOssImg
 }
 export default {
