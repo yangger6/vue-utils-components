@@ -11,8 +11,8 @@ const testWebP = (): boolean => {
     }
 }
 export const install = (vue: typeof Vue, options: {} = {}) => {
-    Vue.prototype.$supportWebp = testWebP()
-    Vue.component('v-oss-img', VOssImg)
+    vue.prototype.$supportWebp = testWebP()
+    vue.component('v-oss-img', VOssImg)
 }
 export default {
     install

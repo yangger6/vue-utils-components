@@ -1,6 +1,6 @@
 import VOssImg from './components/v-oss-img'
 import Vue, {PluginObject} from 'vue'
-const version = '0.0.5'
+import {version} from '../package.json'
 
 interface ICustomWindow {
     Vue: typeof Vue
@@ -8,10 +8,7 @@ interface ICustomWindow {
 declare let window: ICustomWindow
 
 const components: {
-    [key: string]: PluginObject<{
-        install: () => void
-        [key: string]: any
-    }>
+    [key: string]: PluginObject<{}>
 } = {
     VOssImg
 }
