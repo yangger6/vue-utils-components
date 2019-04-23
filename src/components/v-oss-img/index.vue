@@ -35,6 +35,9 @@
                     if (this.isWebp) {
                         return this.src
                     }
+                    if (/x-oss-process/.exec(this.src)) { // oss已经使用了参数的情况 追加选项即可
+                        return this.src + ',image/format,webp'
+                    }
                     return this.src + '?x-oss-process=image/format,webp'
                 } else {
                     return this.src + '?x-oss-process=image/interlace,1/format,jpg'

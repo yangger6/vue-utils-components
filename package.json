@@ -1,6 +1,6 @@
 {
   "name": "vue-utils-components",
-  "version": "0.0.91",
+  "version": "0.0.92",
   "description": "vue-utils-components",
   "main": "lib/index.js",
   "scripts": {
