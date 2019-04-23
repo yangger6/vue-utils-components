@@ -1,5 +1,5 @@
 <template>
-    <img ref="img" :src="currentSrc" @error="loadFallback" :alt="alt">
+    <img ref="img" :src="currentSrc" @error="loadFallback" :alt="alt" @click="$emit('click')">
 </template>
 <script lang="ts">
     import {Vue, Prop, Component} from 'vue-property-decorator'
