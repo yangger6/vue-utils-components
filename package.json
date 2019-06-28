@@ -41,5 +41,13 @@
     "tslib": "^1.9.3",
     "vue": "^2.6.10",
     "vue-property-decorator": "^8.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangger6/vue-utils-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yangger6/vue-utils-components/issues"
+  },
+  "homepage": "https://github.com/yangger6/vue-utils-components#readme"
 }

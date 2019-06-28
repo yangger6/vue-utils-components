@@ -10,8 +10,8 @@
             default: ''
         }) src: string
         @Prop(String) alt!: string
-        @Prop(String | Number) width!: string | number
-        @Prop(String | Number) height!: string | number
+        @Prop([String, Number]) width: string | number
+        @Prop([String, Number]) height: string | number
         isOss: boolean = false
         isWebp: boolean = false
         errorText: string = ''
@@ -61,7 +61,12 @@
         get currentWidth (): string {
             if (this.width) {
                 if (typeof this.width === 'string') {
-                    return this.width.match(/\d*/) ? this.width.match(/\d*/)[0] : ''
+                    const matchesArr = this.width.match(/\d*/)
+                    if (matchesArr && matchesArr[0]) {
+                        return matchesArr[0]
+                    } else {
+                        return ''
+                    }
                 } else if (typeof this.width === 'number') {
                     return String(this.width)
                 } else {
@@ -74,7 +79,12 @@
         get currentHeight (): string  {
             if (this.height) {
                 if (typeof this.height === 'string') {
-                    return this.height.match(/\d*/) ? this.height.match(/\d*/)[0] : ''
+                    const matchesArr = this.height.match(/\d*/)
+                    if (matchesArr && matchesArr[0]) {
+                        return matchesArr[0]
+                    } else {
+                        return ''
+                    }
                 } else if (typeof this.height === 'number') {
                     return String(this.height)
                 } else {
